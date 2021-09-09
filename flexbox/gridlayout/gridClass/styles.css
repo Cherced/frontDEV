@@ -1,0 +1,30 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.abuelo {
+  display: -ms-grid;
+  display: grid;
+  background-color: cyan;
+  width: 100%;
+  height: 150px;
+  -ms-grid-rows: (1fr)[2];
+  -ms-grid-columns: (1fr)[2];
+      grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+}
+
+.padre {
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+  -ms-grid-columns: (1fr)[2];
+      grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+}
+
+.nieto {
+  background-color: aliceblue;
+}

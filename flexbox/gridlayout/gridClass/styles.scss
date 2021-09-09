@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.abuelo{
+    display: grid;
+    background-color:cyan;
+    width: 100%;
+    height: 150px;
+    grid-template: repeat(2,1fr)/repeat(2,1fr);
+}
+
+.padre{
+    background-color: black;
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(2,1fr);
+}
+
+.nieto{
+    background-color:aliceblue;
+}
